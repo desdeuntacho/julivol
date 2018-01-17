@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/wallop.css">
+    <link rel="stylesheet" href="css/wallop--fade.css">
     <title>Julia Volpato</title>
     <meta name="description" content="DESCRIPCION.">
   </head>
@@ -24,9 +26,9 @@
         </ul>
         <p>— </p>
         <ul class="list-unstyled components">
-          <li><a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false">Obras</a>
-            <ul class="collapse list-unstyled" id="homeSubmenu1">
-              <li><a href="rodamientos.html">Rodamientos</a></li>
+          <li><a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="true">Obras</a>
+            <ul class="collapse list-unstyled in" id="homeSubmenu1">
+              <li><a class="active" href="rodamientos.html">Rodamientos</a></li>
               <li><a href="lasombra.html">La sombra que señala la hora</a></li>
               <li><a href="trapos.html">Trapos y concretos</a></li>
             </ul>
@@ -48,13 +50,22 @@
         <div id="content">
           <input id="sidebartoggler" type="checkbox">
           <label class="visible-xs" id="sidebarCollapse" for="sidebartoggler">✖</label>
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 statement-container">
-            <div class="bio">
-              <p>1992, Buenos Aires, Argentina. <a href="JuliaVolpato_CV.pdf" target="_blank">CV</a></p>
-              <p>Se forma como diseñadora industrial, en la búsqueda de conocimientos técnicos y concretos sobre materiales y modos de hacer, con el objetivo de aplicarlo al arte.</p>
-              <p>En paralelo, asiste a talleres y clínicas, tomando así herramientas prácticas y sensibles para el análisis de la propia producción en el contexto del arte contemporáneo.</p>
-              <p>Le interesa el aspecto teórico-conceptual en el trabajo y formación del artista, por lo que está llevando a cabo el desarrollo de una biblioteca de teoría (base de datos física y virtual) colectiva y móvil.</p>
-              <p>En 2017 su obra <span>Rodamientos</span> recibe el primer premio de la 15º edición del Premio Proyecto-A.</p>
+          <div class="col-xs-12 statement-container">
+            <div class="obras">
+              <h2>Rodamientos</h2>
+              <p>Proponerse construir una pared para transportarla hacia otro lugar.</p>
+              <div class="Wallop Wallop--fade">
+                <div class="Wallop-list">
+                  <div class="Wallop-item Wallop-item--current"><img src="/img/rodamientos 1.jpg"></div>
+                  <div class="Wallop-item"><img src="/img/rodamientos 2.jpg"></div>
+                  <div class="Wallop-item"><img src="/img/rodamientos 3.jpg"></div>
+                  <div class="Wallop-item"><img src="/img/rodamientos 4.jpg"></div>
+                  <div class="Wallop-item"><img src="/img/rodamientos 5.jpg"></div>
+                  <div class="Wallop-item"><img src="/img/rodamientos 6.jpg"></div>
+                </div>
+                <button class="Wallop-buttonPrevious">Previous</button>
+                <button class="Wallop-buttonNext">Next</button>
+              </div>
             </div>
           </div>
         </div>
@@ -62,6 +73,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/Wallop.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -8,45 +8,8 @@ $(document).ready(function () {
     //     $(this).toggleClass('active');
     // });
 
-    // var $statement = $('.statement');
-    // $statement.on('mouseover', function showStatement () {
-    //   $statement.delay(1500).queue(function () {
-    //     $statement.find('.statement-txt:nth-child(1)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500)
-    //   .queue(function () {
-    //     $statement.find('.statement-txt:nth-child(2)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500)
-    //   .queue(function () {
-    //     $statement.find('.statement-txt:nth-child(3)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500)
-    //   .queue(function () {
-    //     $statement.find('.statement-txt:nth-child(4)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500)
-    //   .queue(function () {
-    //     $statement.find('.statement-txt:nth-child(5)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500)
-    //   .queue(function () {
-    //     $statement.find('.statement-txt:nth-child(6)').addClass('visible');
-    //     $(this).dequeue();
-    //   })
-    //   .delay(1500);
-    // });
-    // var screenWidth = window.innerWidth;
-    // if (screenWidth < 768) {
-    //     $statement.showStatement();
-    // }
     $('.statement').on('mouseover', function () {
-      var delayTime = 1000,
+      var delayTime = 500,
       $statement = $('.statement'),
       $statementTxt = $statement.children('.statement-txt');
       $statementTxt.each(function () {
@@ -67,5 +30,8 @@ $(document).ready(function () {
         // in our CSS
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+    
+    var wallopEl = document.querySelector('.Wallop');
+    var slider = new Wallop(wallopEl);
 
 });

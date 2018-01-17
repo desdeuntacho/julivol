@@ -6,8 +6,7 @@ body {
   font-size: 16px;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Roboto';
-  line-height: 1.5;
+  font-family: "PT Serif";
 }
 
 a {
@@ -26,7 +25,7 @@ a:hover, a:focus {
 }
 
 #sidebartoggler:checked + #sidebarCollapse {
-  margin-left: 260px;
+  margin-left: 270px;
   margin-top: -25px;
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
@@ -44,7 +43,7 @@ a:hover, a:focus {
   height: 50px;
   font-weight: 300;
   font-size: 36px;
-  transition: all 0.5s;
+  transition: all 0.45s;
 }
 
 @media (max-width: 767px) {
@@ -56,7 +55,7 @@ a:hover, a:focus {
 #sidebar {
   background-color: rgba(255, 255, 255, 0.95);
   margin-left: 30px;
-  width: 285px;
+  width: 295px;
   position: fixed;
   top: 0;
   left: 0;
@@ -67,7 +66,7 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   #sidebar {
-    margin-left: -285px;
+    margin-left: -295px;
   }
 }
 
@@ -76,7 +75,7 @@ a:hover, a:focus {
   font-size: 16px;
 }
 
-#sidebar ul .active {
+#sidebar ul li .active {
   font-weight: bold;
 }
 
@@ -88,6 +87,10 @@ a:hover, a:focus {
   font-size: 14px;
   padding-left: 10px;
   padding-bottom: 5px;
+}
+
+#sidebar ul ul li .active {
+  font-weight: bold;
 }
 
 #sidebar .sidebar-header {
@@ -118,7 +121,8 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   #sidebar.active {
-    margin-left: 25px;
+    margin-left: 0px;
+    padding-left: 50px;
   }
 }
 
@@ -221,7 +225,6 @@ a:hover, a:focus {
 }
 
 .statement p {
-  font-family: "PT Serif";
   font-size: 25px;
   letter-spacing: 1.5px;
   line-height: 1.25;
@@ -295,4 +298,94 @@ a:hover, a:focus {
 
 .statement p:nth-child(18) {
   margin-left: 50px;
+}
+
+.bio {
+  border: 2px solid black;
+  padding: 25px 30px;
+  margin-left: 100px;
+}
+
+@media (max-width: 767px) {
+  .bio {
+    margin-left: auto;
+    padding: 25px 20px;
+  }
+}
+
+.bio p {
+  color: black;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 1.35;
+  margin-bottom: 7.5px;
+  text-align: justify;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+  .bio p {
+    text-align: left;
+  }
+}
+
+.bio p:last-child {
+  margin-bottom: 0px;
+}
+
+.bio p a {
+  margin-top: -2.5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  float: right;
+  text-decoration: line-through;
+}
+
+@media (max-width: 767px) {
+  .bio p a {
+    margin-top: -20px;
+  }
+}
+
+.bio p a:hover {
+  text-decoration: none;
+}
+
+.bio p span {
+  font-style: italic;
+}
+
+.obras {
+  margin-left: 100px;
+}
+
+@media (max-width: 767px) {
+  .obras {
+    margin-left: auto;
+  }
+}
+
+.obras h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.obras p {
+  margin-bottom: 25px;
+  font-family: "Roboto";
+  font-style: italic;
+  color: #333;
+}
+
+.obras .Wallop-item {
+  height: 600px;
+}
+
+.obras .Wallop-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
