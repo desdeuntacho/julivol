@@ -30,8 +30,29 @@ $(document).ready(function () {
         // in our CSS
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
-    
-    var wallopEl = document.querySelector('.Wallop');
-    var slider = new Wallop(wallopEl);
+
+    $('.slider').slick({
+      dots: true,
+      fade: true,
+      speed: 500,
+      cssEase: 'linear',
+      mobileFirst: true,
+      adaptiveHeight: true,
+    });
+
+    $('.memoria').on('click', function () {
+      // var delayTime = 500,
+      // $concepto = $('.concepto'),
+      // $conceptoTxt = $statement.children('.concepto-txt');
+      // $conceptoTxt.each(function () {
+      //   var child = $(this);
+      //   $conceptoTxt.fadeIn('slow')
+      //   // $statement.queue(function () {
+      //   //   child.fadeIn('slow');
+      //   //   $statement.dequeue();
+      //   // }).delay(delayTime);
+      // });
+      $('.concepto-txt').fadeIn('3000');
+    });
 
 });
